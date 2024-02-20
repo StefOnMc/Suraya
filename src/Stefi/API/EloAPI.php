@@ -53,4 +53,16 @@ class EloAPI
 	{
 		return self::$data->get(self::getPlayerName($player));
 	}
+	public static function getAllElo(): array
+	{
+		$eloData = [];
+		$allData = self::$data->getAll();
+
+		foreach ($allData as $playerName => $elo) {
+			$eloData[$playerName] = $elo;
+		}
+
+		return $eloData;
+	}
+
 }
