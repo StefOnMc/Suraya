@@ -1,0 +1,13 @@
+name: Suraya
+version: DEV
+api: 5.0.0
+main: Stefi\Suraya
+permissions:
+  kit.use:
+    default: true
+  elo.use:
+    default: true
+  xyz.use:
+    default: op
+depend:
+  - EconomyAPI
