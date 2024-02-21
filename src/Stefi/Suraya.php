@@ -44,6 +44,8 @@ class Suraya extends PluginBase
 	TaskMgr::Init();
 	ListenMgr::Init();
 	CmdMgr::Init();
+
+
 	$this->getLogger()->info("Suraya minicore lancée !");
 }
 

@@ -2,7 +2,7 @@
 
 namespace Stefi\API;
 
-use pocketmine\event\player\PlayerJoinEvent;
+
 use pocketmine\player\Player;
 use pocketmine\utils\Config;
 use Stefi\Suraya;

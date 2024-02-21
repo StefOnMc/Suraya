@@ -31,18 +31,25 @@ $killername = $killer->getName();
 			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername chepa");
 EloAPI::addElo($killer,mt_rand(25,30));
 		} elseif ($elo >= 2000) {
+			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername guest");
 			EloAPI::addElo($killer,mt_rand(25,30));
 		} elseif ($elo >= 1000) {
+			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername guest");
 			EloAPI::addElo($killer,mt_rand(15,25));
 		} elseif ($elo >= 800) {
+			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername guest");
 			EloAPI::addElo($killer,mt_rand(15,25));
 		} elseif ($elo >= 600) {
+			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername guest");
 			EloAPI::addElo($killer,mt_rand(5,15));
 		} elseif ($elo >= 400) {
+			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername guest");
 			EloAPI::addElo($killer,mt_rand(5,15));
 		} elseif ($elo >= 300) {
+			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername guest");
 			EloAPI::addElo($killer,mt_rand(5,15));
 		} elseif ($elo >= 100) {
+			Suraya::Server()->dispatchCommand(new ConsoleCommandSender(Suraya::Server(),Suraya::Server()->getLanguage()),"setgroup $killername guest");
 			EloAPI::addElo($killer,mt_rand(5,15));
 		}else{
 			EloAPI::addElo($killer,mt_rand(5,15));

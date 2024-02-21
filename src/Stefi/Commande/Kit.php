@@ -27,12 +27,13 @@ public function execute(CommandSender $sender, string $commandLabel, array $args
 switch($args[0]) {
 	case "sorcier":
 
-if(CooldownsAPI::hasCooldown($sender->getName(),"sorcier")){
+if(CooldownsAPI::Iscooldown($sender->getName(),"sorcier")){
 	$time = CooldownsAPI::getTime($sender->getName(),"sorcier");
 $sender->sendMessage("§c Il vous reste $time.");
 }else{
-	$sender->sendToastNotification("","Vous avez bien récupéré le kit sorcier.");
+
 	if(!$this->Isfull($sender) && !$this->IsfullArmor($sender)){
+		$sender->sendToastNotification("","Vous avez bien récupéré le kit sorcier.");
 		CooldownsAPI::setCooldown($sender->getName(),30,"seconde","sorcier");
 	$objArmor = [
 		VanillaItems::IRON_HELMET(),
@@ -61,7 +62,7 @@ $sender->sendMessage("§c Il vous reste $time.");
 
 		break;
 	case "tank":
-		if(CooldownsAPI::hasCooldown($sender->getName(),"tank")){
+		if(CooldownsAPI::Iscooldown($sender->getName(),"tank")){
 			$time = CooldownsAPI::getTime($sender->getName(),"tank");
 			$sender->sendMessage("§c Il vous reste $time.");
 		}else{
@@ -89,7 +90,7 @@ VanillaItems::DIAMOND_SWORD()
 		}
 		break;
 	case "chevalier":
-		if(CooldownsAPI::hasCooldown($sender->getName(),"chevalier")){
+		if(CooldownsAPI::Iscooldown($sender->getName(),"chevalier")){
 			$time = CooldownsAPI::getTime($sender->getName(),"chevalier");
 			$sender->sendMessage("§c Il vous reste $time.");
 		}else{

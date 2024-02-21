@@ -47,7 +47,7 @@ class CooldownsAPI
 		return self::FormatTime($remainingTime);
 	}
 
-	public static function hasCooldown(string $playerName,string $grade) {
+	public static function Iscooldown(string $playerName, string $grade) {
 		$cooldownData = self::$cooldowns->getNested("cooldowns.$grade", []);
 		return isset($cooldownData[$playerName]);
 	}
